@@ -7,7 +7,7 @@ Simon the interactive children’s game is a timeless memory challenge for all a
 # Video Demonstration
 [Simon Video Demonstration](https://www.youtube.com/watch?v=-cWVwteFDmk)
 
-[![Simon Video Demo](https://imgur.com/7F8Dp88)](https://www.youtube.com/watch?v=-cWVwteFDmk "Simon Video Demo")
+[![Simon Video Demo](https://i.imgur.com/7F8Dp88.png)](https://www.youtube.com/watch?v=-cWVwteFDmk "Simon Video Demo")
 
 # Implementation Description
 Next, let’s talk about how we did it. Single player mode requires less hardware than multiplayer mode, so we can introduce that first. For the fully functioning game we needed to procure a MSP430, a XBEE, and a custom made PCB board. The MSP430 is the microcontroller that we can use to load the program or functionality of the game onto. The design of this game would use up pretty much every pin found on the board. The only pins left unused on the board were the XIN and XOUT pins. The P1 pins were utilizes for status LEDs, UART, and game mode buttons. The P2 pins were used for the buttons that correspond with the colored LEDs. With some clever circuitry we were able to allow these four pins to control the 4 color buttons along with the 4 different colored LEDs. The main source of power we used was power from a local computer via USB, which would supply a steady flow of ~3.5 Volts. We attempted to make the main source of power just a battery source but we ran into some difficulties with the time we had allotted ourselves at the end of the project. We assume that the battery packs were simply just not supplying enough power because when measured it was only outputting about 3V, which may have fallen a little short of the necessary voltage.
